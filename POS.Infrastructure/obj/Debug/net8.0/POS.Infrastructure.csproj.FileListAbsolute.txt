@@ -1,0 +1,14 @@
+C:\Users\milka\source\repos\POS\POS.Infrastructure\obj\Debug\net8.0\POS.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\milka\source\repos\POS\POS.Infrastructure\obj\Debug\net8.0\POS.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\milka\source\repos\POS\POS.Infrastructure\obj\Debug\net8.0\POS.Infrastructure.AssemblyInfo.cs
+C:\Users\milka\source\repos\POS\POS.Infrastructure\obj\Debug\net8.0\POS.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\milka\source\repos\POS\POS.Infrastructure\obj\Debug\net8.0\POS.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\milka\source\repos\POS\POS.Infrastructure\bin\Debug\net8.0\POS.Infrastructure.deps.json
+C:\Users\milka\source\repos\POS\POS.Infrastructure\bin\Debug\net8.0\POS.Infrastructure.runtimeconfig.json
+C:\Users\milka\source\repos\POS\POS.Infrastructure\bin\Debug\net8.0\POS.Infrastructure.dll
+C:\Users\milka\source\repos\POS\POS.Infrastructure\bin\Debug\net8.0\POS.Infrastructure.pdb
+C:\Users\milka\source\repos\POS\POS.Infrastructure\obj\Debug\net8.0\POS.Infrastructure.dll
+C:\Users\milka\source\repos\POS\POS.Infrastructure\obj\Debug\net8.0\refint\POS.Infrastructure.dll
+C:\Users\milka\source\repos\POS\POS.Infrastructure\obj\Debug\net8.0\POS.Infrastructure.pdb
+C:\Users\milka\source\repos\POS\POS.Infrastructure\obj\Debug\net8.0\POS.Infrastructure.genruntimeconfig.cache
+C:\Users\milka\source\repos\POS\POS.Infrastructure\obj\Debug\net8.0\ref\POS.Infrastructure.dll
