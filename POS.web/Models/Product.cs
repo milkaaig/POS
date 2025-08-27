@@ -7,10 +7,15 @@ namespace POS.web.Models
         public int ProductId { get; set; }
         public string ProductName { get; set; }
         public int Price { get; set; }
-        public Categories Category { get; set; }
+       
         public int Quantity { get; set; }
 
-        public DateTime ExpiryDate { get; set; }
+        public DateOnly ExpiryDate { get; set; }
+
+
+        // foreign key from Category table
+        public int CategoryId { get; set; }
+        public virtual Category Category { get; set; }
 
 
 
