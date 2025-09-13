@@ -1,26 +1,25 @@
-﻿namespace POS.web.Models
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace POS.web.Models
 {
     public class Stock
     {
-        public Product ProductId { get; set; }
+        public int Id { get; set; }
+
+        [Required(ErrorMessage = "Quantity is Required")]
         public int Quantity { get; set; }
-<<<<<<< Updated upstream
-        public DateTime StockedIn { get; set; }
-        public DateTime? StockedOut { get; set; }
-        public Product ExpiryDate { get; set; }
-=======
 
-        [Required]
+        [Required(ErrorMessage = "Stocked In date is Required")]
         public DateOnly StockedIn { get; set; }
-        [Required]
-        public DateOnly StockedOut { get; set; }
+
+        [Required(ErrorMessage = "Stocked Out date is Required")]
+        public DateOnly? StockedOut { get; set; }
 
         [Required]
-        public Product ExpiryDate { get; set; }
+        [ForeignKey(nameof(Product))]
+        public int ProductId { get; set; }
 
-
-        public int ShopId { get; set; }
-        public virtual Shop Shop { get; set; }
->>>>>>> Stashed changes
+        public virtual Product Product { get; set; }
     }
 }

@@ -3,14 +3,11 @@
 namespace POS.web.Models
 {
     public class Shop
-
-
     {
-        [Required]
-        public int? Id { get; set; }
+        public int Id { get; set; }
 
         [Required(ErrorMessage = "Shop Name Required")]
         public string Name { get; set; }
-
     }
+    
 }
