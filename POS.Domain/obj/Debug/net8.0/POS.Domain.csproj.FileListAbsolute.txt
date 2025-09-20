@@ -5,6 +5,7 @@ C:\Users\milka\source\repos\POS\POS.Domain\obj\Debug\net8.0\POS.Domain.Generated
 C:\Users\milka\source\repos\POS\POS.Domain\obj\Debug\net8.0\POS.Domain.AssemblyInfoInputs.cache
 C:\Users\milka\source\repos\POS\POS.Domain\obj\Debug\net8.0\POS.Domain.AssemblyInfo.cs
 C:\Users\milka\source\repos\POS\POS.Domain\obj\Debug\net8.0\POS.Domain.csproj.CoreCompileInputs.cache
+C:\Users\milka\source\repos\POS\POS.Domain\obj\Debug\net8.0\POS.Domain.sourcelink.json
 C:\Users\milka\source\repos\POS\POS.Domain\obj\Debug\net8.0\POS.Domain.dll
 C:\Users\milka\source\repos\POS\POS.Domain\obj\Debug\net8.0\refint\POS.Domain.dll
 C:\Users\milka\source\repos\POS\POS.Domain\obj\Debug\net8.0\POS.Domain.pdb
