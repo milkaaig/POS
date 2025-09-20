@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Hosting;
 using POS.web.Models;
+using System.Diagnostics.Metrics;
 
 
 namespace POS.web.Data
@@ -127,8 +128,79 @@ namespace POS.web.Data
                 .HasForeignKey(s => s.EmployeeId)
                 .OnDelete(DeleteBehavior.Restrict);
 
+
+
+            //b.Property(x => x.Name).IsRequired();
+            //b.HasData(
+            //    new Country { CountryId = 1, Name = "USA" },
+            //    new Country { CountryId = 2, Name = "Canada" },
+            //    new Country { CountryId = 3, Name = "Mexico" });
+            modelBuilder.Entity<Product>(p =>
+            {
+                p.HasData(
+                    new Product
+                    {
+                        Id = 1,
+                        ProductName = "1litre Water",
+                        Price = 10,
+                        Quantity = 5,
+                        ExpiryDate = DateOnly.FromDateTime(DateTime.Now.AddYears(1)),
+                        CategoryId = 1
+                    },
+                    new Product
+                    {
+                        Id = 2,
+                        ProductName = "500g  chips",
+                        Price = 6,
+                        Quantity = 3,
+                        ExpiryDate = DateOnly.FromDateTime(DateTime.Now.AddYears(1)),
+                        CategoryId = 2
+                    },
+                    new Product
+                    {
+                        Id = 3,
+                        ProductName = "200g  TissuePaper",
+                        Price = 8,
+                        Quantity = 5,
+                        ExpiryDate = DateOnly.FromDateTime(DateTime.Now.AddYears(1)),
+                        CategoryId = 3
+                    },
+                    new Product
+                    {
+                        Id = 4,
+                        ProductName = "500g Bread",
+                        Price = 15,
+                        Quantity = 10,
+                        ExpiryDate = DateOnly.FromDateTime(DateTime.Now.AddYears(1)),
+                        CategoryId = 4
+                    },
+                    new Product
+                    {
+                        Id = 5,
+                        ProductName = "100g Snickers ",
+                        Price = 8,
+                        Quantity = 5,
+                        ExpiryDate = DateOnly.FromDateTime(DateTime.Now.AddYears(1)),
+                        CategoryId = 5
+                    }
+                );
+            });
+
+
+            modelBuilder.Entity<Category>(c =>
+            {
+                c.HasData(
+                    new Category { Id = 1, Name = "Beverages" },
+                    new Category { Id = 2, Name = "Snacks" },
+                    new Category { Id = 3, Name = "Sanitary" },
+                    new Category { Id = 4, Name = "Bakery" },
+                    new Category { Id = 5, Name = "Confectionery" }
+                );
+            });
+
             base.OnModelCreating(modelBuilder);
-        }
+
+        } 
     }
     
 }
