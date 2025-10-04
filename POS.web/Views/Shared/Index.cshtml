@@ -1,0 +1,61 @@
+﻿@model POS.web.Models.Product
+
+@{
+    ViewData["Title"] = "Sales items";
+}
+
+<div class="container mt-4">
+    <h1>Sales Items</h1>
+    @* <h2>Create Sales</h2>
+    
+    
+    <form method="post" asp-controller ="Landing" asp-action="" >
+        <div class="form-group mb-3">
+            <label >Product ID</label>
+            <input  class="form-control" placeholder="Enter Product ID" />
+        </div>
+        <div class="form-group mb-3">
+            <label >Quantity</label>
+            <input  class="form-control" placeholder="Enter Quantity" />
+        </div>
+        <button type="submit" class="btn btn-primary">Add Product</button>
+    </form>
+
+    
+    <hr />
+
+    <h3>Receipt</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Product ID</th>
+                <th>ProductName</th>
+                <th>Category</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+
+         fetches it from the reciept list we have been creating
+        @foreach (var item in Model.Receipt)
+        {
+            <tr>
+                <td>@item.ProductId</td>
+                <td>@item.ProductName</td>
+                <td>@item.Category</td>
+                <td>@item.Quantity</td>
+                <td>@item.Price</td>
+                <td>@item.Total</td>
+            </tr>
+        }
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5" class="text-end"><strong>Total:</strong></td>
+                <td><strong></strong></td>
+            </tr>
+        </tfoot>
+    </table> *@
+</div>
