@@ -11,8 +11,6 @@ C:\Users\milka\source\repos\POS\POS.web\bin\Debug\net8.0\POS.web.pdb
 C:\Users\milka\source\repos\POS\POS.web\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\milka\source\repos\POS\POS.web\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\milka\source\repos\POS\POS.web\bin\Debug\net8.0\Humanizer.dll
-C:\Users\milka\source\repos\POS\POS.web\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
-C:\Users\milka\source\repos\POS\POS.web\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\milka\source\repos\POS\POS.web\bin\Debug\net8.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
 C:\Users\milka\source\repos\POS\POS.web\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\milka\source\repos\POS\POS.web\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.UI.dll
@@ -36,9 +34,6 @@ C:\Users\milka\source\repos\POS\POS.web\bin\Debug\net8.0\Microsoft.Extensions.Co
 C:\Users\milka\source\repos\POS\POS.web\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\milka\source\repos\POS\POS.web\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\milka\source\repos\POS\POS.web\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
-C:\Users\milka\source\repos\POS\POS.web\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Embedded.dll
-C:\Users\milka\source\repos\POS\POS.web\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
-C:\Users\milka\source\repos\POS\POS.web\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\milka\source\repos\POS\POS.web\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
 C:\Users\milka\source\repos\POS\POS.web\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\milka\source\repos\POS\POS.web\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
@@ -181,3 +176,9 @@ C:\Users\milka\source\repos\POS\POS.web\obj\Debug\net8.0\refint\POS.web.dll
 C:\Users\milka\source\repos\POS\POS.web\obj\Debug\net8.0\POS.web.pdb
 C:\Users\milka\source\repos\POS\POS.web\obj\Debug\net8.0\POS.web.genruntimeconfig.cache
 C:\Users\milka\source\repos\POS\POS.web\obj\Debug\net8.0\ref\POS.web.dll
+C:\Users\milka\source\repos\POS\POS.web\obj\Debug\net8.0\swae.build.ex.cache
+C:\Users\milka\source\repos\POS\POS.web\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\milka\source\repos\POS\POS.web\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\milka\source\repos\POS\POS.web\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\milka\source\repos\POS\POS.web\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\milka\source\repos\POS\POS.web\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll

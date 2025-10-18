@@ -41,11 +41,11 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
-app.UseSession();
+
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Landing}/{action=Reciept}/{id?}");
+    pattern: "{controller=Landing}/{action=Index}/{id?}");
 app.MapRazorPages();
 
 app.Run();

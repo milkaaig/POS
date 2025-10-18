@@ -1,0 +1,71 @@
+﻿@model POS.web.ViewModels.Reciept
+
+
+<div class="container mt-4">
+    <h2>Create Sales</h2>
+    <form method="post" asp-controller="Landing" asp-action="Index">
+        @* We are populating the table from the list  *@
+        @for (int i = 0; i < Model.ProductResult.Count; i++)
+        {
+            <input type="hidden" name="ProductResult[@i].ProductId" value="@Model.ProductResult[i].ProductId" />
+            <input type="hidden" name="ProductResult[@i].ProductName" value="@Model.ProductResult[i].ProductName" />
+            <input type="hidden" name="ProductResult[@i].Category" value="@Model.ProductResult[i].Category" />
+            <input type="hidden" name="ProductResult[@i].Quantity" value="@Model.ProductResult[i].Quantity" />
+            <input type="hidden" name="ProductResult[@i].Price" value="@Model.ProductResult[i].Price" />
+        }
+        <table class="table" id="salesTable">
+            <thead>
+                <tr>
+                    <th>Product ID</th>
+                    <th>ProductName</th>
+                    <th>Category</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input id="inputProductId" asp-for="ProductId" class="form-control input-number-small" placeholder="Enter Product ID" />
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        @* <input id="inputQuantity" asp-for="Quantity" class="form-control" placeholder="Enter Quantity" value="@(Model.Quantity == 0 ? 1 : Model.Quantity)" /> *@
+                        <input id="inputQuantity" asp-for="Quantity" class="form-control input-number-small" placeholder="Enter Quantity" />
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <button id="addProductBtn" type="submit" class="btn btn-primary">Add </button>
+                    </td>
+                </tr>
+                @foreach (var item in Model.ProductResult)
+                {
+                    <tr>
+                        <td>@item.ProductId</td>
+                        <td>@item.ProductName</td>
+                        <td>@item.Category</td>
+                        <td>@item.Quantity</td>
+                        <td>@item.Price</td>
+                        <td>@item.Total</td>
+                        <td></td>
+                    </tr>
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5" class="text-end"><strong>Total:</strong></td>
+                    <td>
+                        <strong>
+                            @Model.Total
+                        </strong>
+                    </td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+</div>

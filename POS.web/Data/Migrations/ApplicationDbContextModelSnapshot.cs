@@ -22,6 +22,27 @@ namespace POS.web.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("Logo", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ContentType")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<byte[]>("ImageData")
+                        .IsRequired()
+                        .HasColumnType("bytea");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Logos");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -331,7 +352,7 @@ namespace POS.web.Migrations
                         {
                             Id = 1,
                             CategoryId = 1,
-                            ExpiryDate = new DateOnly(2026, 9, 20),
+                            ExpiryDate = new DateOnly(2026, 10, 5),
                             Price = 10,
                             ProductName = "1litre Water",
                             Quantity = 5
@@ -340,7 +361,7 @@ namespace POS.web.Migrations
                         {
                             Id = 2,
                             CategoryId = 2,
-                            ExpiryDate = new DateOnly(2026, 9, 20),
+                            ExpiryDate = new DateOnly(2026, 10, 5),
                             Price = 6,
                             ProductName = "500g  chips",
                             Quantity = 3
@@ -349,7 +370,7 @@ namespace POS.web.Migrations
                         {
                             Id = 3,
                             CategoryId = 3,
-                            ExpiryDate = new DateOnly(2026, 9, 20),
+                            ExpiryDate = new DateOnly(2026, 10, 5),
                             Price = 8,
                             ProductName = "200g  TissuePaper",
                             Quantity = 5
@@ -358,7 +379,7 @@ namespace POS.web.Migrations
                         {
                             Id = 4,
                             CategoryId = 4,
-                            ExpiryDate = new DateOnly(2026, 9, 20),
+                            ExpiryDate = new DateOnly(2026, 10, 5),
                             Price = 15,
                             ProductName = "500g Bread",
                             Quantity = 10
@@ -367,7 +388,7 @@ namespace POS.web.Migrations
                         {
                             Id = 5,
                             CategoryId = 5,
-                            ExpiryDate = new DateOnly(2026, 9, 20),
+                            ExpiryDate = new DateOnly(2026, 10, 5),
                             Price = 8,
                             ProductName = "100g Snickers ",
                             Quantity = 5

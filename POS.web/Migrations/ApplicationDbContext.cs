@@ -22,6 +22,7 @@ namespace POS.web.Data
         public DbSet<Stock> Stocks { get; set; }
         public DbSet<Shop> Shops { get; set; }
         public DbSet<SalesItems> SalesItems { get; set; }
+        public DbSet<Logo> Logos { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

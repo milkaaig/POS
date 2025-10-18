@@ -7,12 +7,23 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/POS.web.styles.css" asp-append-version="true" />
+    <script src="~/js/LogoUpload.js" asp-append-version="true"></script>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">POS.web</a>
+                <form  >
+                    <div class="logContainer">
+                        <a asp-controller="ShopCustomization" asp-action="Customize">
+                            <img src="~/images/logo.png" id="logoUpload" alt="Logo" class="navbar-logo" />
+                       </a>
+                    </div>
+
+                </form>
+                <a class="navbar-brand" >
+                    Duka
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -39,9 +50,11 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2025 - POS.web - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2025 - Duka - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
+
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
